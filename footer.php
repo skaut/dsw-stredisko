@@ -5,8 +5,8 @@
  * Contains the closing of the "site-content" div and all content after.
  *
  * @package WordPress
- * @subpackage Twenty_Fifteen
- * @since Twenty Fifteen 1.0
+ * @subpackage DSW_Stredisko
+ * @since DSW Stredisko 1.0
  */
 ?>
 
@@ -16,13 +16,13 @@
 		<div class="site-info">
 			<?php
 				/**
-				 * Fires before the Twenty Fifteen footer text for footer customization.
+				 * Fires before the DSW Stredisko footer text for footer customization.
 				 *
-				 * @since Twenty Fifteen 1.0
+				 * @since DSW Stredisko 1.0
 				 */
-				do_action( 'twentyfifteen_credits' );
+				do_action( 'dsw-stredisko_credits' );
 			?>
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'twentyfifteen' ) ); ?>"><?php printf( __( 'Proudly powered by %s', 'twentyfifteen' ), 'WordPress' ); ?></a>
+			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'dsw-stredisko' ) ); ?>"><?php printf( __( 'Proudly powered by %s', 'dsw-stredisko' ), 'WordPress' ); ?></a>
 		</div><!-- .site-info -->
 	</footer><!-- .site-footer -->
 

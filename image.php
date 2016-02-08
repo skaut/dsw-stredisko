@@ -3,8 +3,8 @@
  * The template for displaying image attachments
  *
  * @package WordPress
- * @subpackage Twenty_Fifteen
- * @since Twenty Fifteen 1.0
+ * @subpackage DSW_Stredisko
+ * @since DSW Stredisko 1.0
  */
 
 get_header(); ?>
@@ -21,7 +21,7 @@ get_header(); ?>
 
 					<nav id="image-navigation" class="navigation image-navigation">
 						<div class="nav-links">
-							<div class="nav-previous"><?php previous_image_link( false, __( 'Previous Image', 'twentyfifteen' ) ); ?></div><div class="nav-next"><?php next_image_link( false, __( 'Next Image', 'twentyfifteen' ) ); ?></div>
+							<div class="nav-previous"><?php previous_image_link( false, __( 'Previous Image', 'dsw-stredisko' ) ); ?></div><div class="nav-next"><?php next_image_link( false, __( 'Next Image', 'dsw-stredisko' ) ); ?></div>
 						</div><!-- .nav-links -->
 					</nav><!-- .image-navigation -->
 
@@ -34,13 +34,13 @@ get_header(); ?>
 						<div class="entry-attachment">
 							<?php
 								/**
-								 * Filter the default Twenty Fifteen image attachment size.
+								 * Filter the default DSW Stredisko image attachment size.
 								 *
-								 * @since Twenty Fifteen 1.0
+								 * @since DSW Stredisko 1.0
 								 *
 								 * @param string $image_size Image size. Default 'large'.
 								 */
-								$image_size = apply_filters( 'twentyfifteen_attachment_size', 'large' );
+								$image_size = apply_filters( 'dsw-stredisko_attachment_size', 'large' );
 
 								echo wp_get_attachment_image( get_the_ID(), $image_size );
 							?>
@@ -56,19 +56,19 @@ get_header(); ?>
 						<?php
 							the_content();
 							wp_link_pages( array(
-								'before'      => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'twentyfifteen' ) . '</span>',
+								'before'      => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'dsw-stredisko' ) . '</span>',
 								'after'       => '</div>',
 								'link_before' => '<span>',
 								'link_after'  => '</span>',
-								'pagelink'    => '<span class="screen-reader-text">' . __( 'Page', 'twentyfifteen' ) . ' </span>%',
+								'pagelink'    => '<span class="screen-reader-text">' . __( 'Page', 'dsw-stredisko' ) . ' </span>%',
 								'separator'   => '<span class="screen-reader-text">, </span>',
 							) );
 						?>
 					</div><!-- .entry-content -->
 
 					<footer class="entry-footer">
-						<?php twentyfifteen_entry_meta(); ?>
-						<?php edit_post_link( __( 'Edit', 'twentyfifteen' ), '<span class="edit-link">', '</span>' ); ?>
+						<?php dsw-stredisko_entry_meta(); ?>
+						<?php edit_post_link( __( 'Edit', 'dsw-stredisko' ), '<span class="edit-link">', '</span>' ); ?>
 					</footer><!-- .entry-footer -->
 
 				</article><!-- #post-## -->
@@ -81,7 +81,7 @@ get_header(); ?>
 
 					// Previous/next post navigation.
 					the_post_navigation( array(
-						'prev_text' => _x( '<span class="meta-nav">Published in</span><span class="post-title">%title</span>', 'Parent post link', 'twentyfifteen' ),
+						'prev_text' => _x( '<span class="meta-nav">Published in</span><span class="post-title">%title</span>', 'Parent post link', 'dsw-stredisko' ),
 					) );
 
 				// End the loop.

@@ -1,9 +1,9 @@
 /**
- * Twenty Fifteen keyboard support for image navigation.
+ * DSW Stredisko keyboard support for image navigation.
  */
 
 ( function( $ ) {
-	$( document ).on( 'keydown.twentyfifteen', function( e ) {
+	$( document ).on( 'keydown.dsw-stredisko', function( e ) {
 		var url = false;
 
 		// Left arrow key code.
